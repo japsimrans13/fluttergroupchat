@@ -98,7 +98,7 @@ Widget buildMessageTile(Message? message) {
               deleteMessage(message.identityNumber);
             },
           )
-        : const Spacer(),
+        : IconButton(onPressed: () {}, icon: const Icon(Icons.report)),
     dense: isMessageOwner ? true : false,
     textColor: isMessageOwner ? Colors.black54 : Colors.black,
   );
